@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Nijin",
+  lastName: "Muhammed",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Product Designer",
+  avatar: "/images/nijin.jpg",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Malayalam"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,8 +17,7 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on business success.
     </>
   ),
 };
@@ -44,7 +43,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:uxnijin@gmail.com",
   },
 ];
 
@@ -52,18 +51,19 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Product Designer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Nijin,<br></br>
+
+      I design products that just work—stuff you'd want in your hands. This spot's my world: my projects, my daydreams, everything I'm about.
     </>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
+  title: "Who I'm",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -81,9 +81,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hey, I'm Nijin
+
+        I design products that just work—stuff you'd want in your hands. This spot's my world: my projects, my daydreams, everything I'm about.
+
+        I'm the one you call when you want something fresh and solid. What do you say—wanna chat?
       </>
     ),
   },
@@ -92,9 +94,9 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Keviz R&D Studio",
+        timeframe: "2024 - Present",
+        role: "Product Designer",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -108,7 +110,7 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/keviz.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -116,9 +118,9 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Qmark Technolabs",
+        timeframe: "2023-2024",
+        role: "UI UX Designer",
         achievements: [
           <>
             Developed a design system that unified the brand across multiple platforms, improving
@@ -129,7 +131,63 @@ const about = {
             in overall company revenue.
           </>,
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/qmark.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Tinkerhub Organization",
+        timeframe: "2023-2024",
+        role: "Designer",
+        achievements: [
+          <>
+            Developed a design system that unified the brand across multiple platforms, improving
+            design consistency by 40%.
+          </>,
+          <>
+            Led a cross-functional team to launch a new product line, contributing to a 15% increase
+            in overall company revenue.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/tinkerhub.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Tinkerhub Organization",
+        timeframe: "2023-2024",
+        role: "Designer",
+        achievements: [
+          <>
+            Developed a design system that unified the brand across multiple platforms, improving
+            design consistency by 40%.
+          </>,
+          <>
+            Led a cross-functional team to launch a new product line, contributing to a 15% increase
+            in overall company revenue.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/tinkerhub.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -138,12 +196,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Farook College, India",
+        description: <>BSc Computer Science</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Farook Higher Secondary School",
+        description: <>Biology Science</>,
       },
     ],
   },
